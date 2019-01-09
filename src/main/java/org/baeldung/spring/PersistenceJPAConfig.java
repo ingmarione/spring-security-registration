@@ -48,8 +48,8 @@ public class PersistenceJPAConfig {
     @Bean
     public DataSource dataSource() {
         final DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        dataSource.setDriverClassName(env.getProperty("jdbc.driverClassName"));
-        dataSource.setUrl(env.getProperty("jdbc.url"));
+        dataSource.setDriverClassName("com.mysql.jdbc.Driver");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/registration_02?createDatabaseIfNotExist=true");
         dataSource.setUsername("root");
         dataSource.setPassword("Cervello84$");
         return dataSource;
