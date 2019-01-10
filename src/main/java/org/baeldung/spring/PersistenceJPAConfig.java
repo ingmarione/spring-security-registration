@@ -51,7 +51,7 @@ public class PersistenceJPAConfig {
         dataSource.setDriverClassName("com.mysql.jdbc.Driver");
         dataSource.setUrl("jdbc:mysql://localhost:3306/registration_02?createDatabaseIfNotExist=true");
         dataSource.setUsername("root");
-        dataSource.setPassword("Cervello84$");
+        dataSource.setPassword("root");
         return dataSource;
     }
 
